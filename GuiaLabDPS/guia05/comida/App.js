@@ -4,6 +4,7 @@ import {
   FlatList,
   StyleSheet,
   StatusBar,
+  Text,
 } from 'react-native';
 import { Card } from 'react-native-elements';
 
@@ -56,7 +57,7 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: StatusBar.currentHeight ? StatusBar.currentHeight : 0,
+    paddingTop: StatusBar.currentHeight ? StatusBar.currentHeight : 0,
   },
   card: {
     padding: 10,
